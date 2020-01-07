@@ -9,19 +9,19 @@ script:
   - docker run -e CI=true gadshaked/docker-react npm run test -- --coverage
 
 # Deploy to AWS
-deploy:
-  provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "docker-react"
-  env: "DockerReact-env"
-  bucket_name: "elasticbeanstalk-us-east-2-342896481456"
-  bucket_path: "docker-react"
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY"
-  # On
-  on:
-    branch: master
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "us-east-2"
+#   app: "docker-react"
+#   env: "DockerReact-env"
+#   bucket_name: "elasticbeanstalk-us-east-2-342896481456"
+#   bucket_path: "docker-react"
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key:
+#     secure: "$AWS_SECRET_KEY"
+#   # On
+#   on:
+#     branch: master
 
 
 
