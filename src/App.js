@@ -8,8 +8,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> I was changed on the feture branch!
-        </p>
+          Edit <code>src/App.js</code>Latest news!!!
+          </p>
         <a
           className="App-link"
           href="https://reactjs.org"
