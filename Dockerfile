@@ -11,3 +11,4 @@ RUN npm run build
 FROM nginx 
 # COPY files from the build phase. we are only intersted in the built files so we will only COPY the files from the /app/build directory
 COPY --from=builder /app/build  /usr/share/nginx/html
+EXPOSE 80
